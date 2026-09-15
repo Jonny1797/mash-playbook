@@ -1,0 +1,74 @@
+name: Sync upstream
+
+on:
+  schedule:
+    # Daily, off the top of the hour to avoid GitHub's cron congestion.
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Merge upstream/main into main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch upstream
+        run: |
+          git remote add upstream https://github.com/mother-of-all-self-hosting/mash-playbook.git
+          git fetch upstream main
+
+      - name: Merge upstream/main
+        id: merge
+        run: |
+          if git merge --no-edit upstream/main; then
+            echo "conflict=false" >> "$GITHUB_OUTPUT"
+          else
+            git merge --abort
+            echo "conflict=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Push merged main
+        if: steps.merge.outputs.conflict == 'false'
+        run: git push origin main
+
+      - name: Open issue on conflict
+        if: steps.merge.outputs.conflict == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          conflicting_files="$(git diff --name-only --diff-filter=U || true)"
+          body=$(cat <<EOF
+          Automatic sync from upstream (mother-of-all-self-hosting/mash-playbook) hit a merge conflict and was aborted.
+
+          Please merge \`upstream/main\` into \`main\` manually to resolve it.
+
+          Conflicting files (if detected):
+          \`\`\`
+          ${conflicting_files}
+          \`\`\`
+          EOF
+          )
+          existing="$(gh issue list --state open --search 'Upstream sync conflict in:title' --json number --jq '.[0].number' || true)"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "Upstream sync conflict" --body "$body"
+          fi
+          exit 1
