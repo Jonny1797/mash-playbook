@@ -1,7 +1,7 @@
 ---
 
 - src: git+https://iris.radicle.network/z2chD7Kt74JwEMafxTooxN7MaeYtK.git
-  version: v26.8.1-0
+  version: v26.9.0-0
   name: actual
   activation_prefix: actual_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-adguard-home.git
@@ -69,7 +69,7 @@
   name: backup_borg
   activation_prefix: backup_borg_
 - src: git+https://iris.radicle.network/z3JDUHjeHMqbZ3YLxquSUbCmAJLi.git
-  version: v6.5.0-0
+  version: v6.7.0-0
   name: barassistant
   activation_prefix: barassistant_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-bazarr.git
@@ -117,7 +117,7 @@
   name: cap
   activation_prefix: cap_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-changedetection.git
-  version: v0.60.4-0
+  version: v0.60.6-0
   name: changedetection
   activation_prefix: changedetection_
 - src: git+https://iris.radicle.network/z3HYheWh86U9ErEL18tK2gBkq7g2A.git
@@ -137,7 +137,7 @@
   name: cleanup
   activation_prefix: system_cleanup_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-clickhouse.git
-  version: v26.8.3.105-0
+  version: v26.8.4.11-0
   name: clickhouse
   activation_prefix: clickhouse_
 - src: git+https://iris.radicle.network/zp12kTQqmgqnFpUU6gPyVq19HNMD.git
@@ -369,11 +369,11 @@
   name: healthchecks
   activation_prefix: healthchecks_
 - src: git+https://iris.radicle.network/z8D2GRZrm8JXZeHHe9j1HMvvj8An.git
-  version: v2.8.2-0
+  version: v2.8.3-0
   name: heimdall
   activation_prefix: heimdall_
 - src: git+https://iris.radicle.network/zsKztkwnLv9wVMRYbcpoFesx6L5j.git
-  version: v3.0.2-0
+  version: v3.0.3-0
   name: heyform
   activation_prefix: heyform_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-homarr.git
@@ -393,7 +393,7 @@
   name: ilmo
   activation_prefix: ilmo_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-immich.git
-  version: v3.2.0-0
+  version: v3.2.1-0
   name: immich
   activation_prefix: immich_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-immich-kiosk.git
@@ -425,7 +425,7 @@
   name: jitsi
   activation_prefix: jitsi_
 - src: git+https://iris.radicle.network/zttNpUS7xCeDnn2e4No2dUvZv7L7.git
-  version: v3.7.1-1
+  version: v3.7.2-0
   name: joplin_server
   activation_prefix: joplin_server_
 - src: git+https://iris.radicle.network/z2LZH9TGMxYbGBaGoMHNFX5HymEL3.git
@@ -505,7 +505,7 @@
   name: mailcrab
   activation_prefix: mailcrab_
 - src: git+https://iris.radicle.network/z3BKJz8wwtQHfXm8MPX81h4izT2QS.git
-  version: v1.31.0-0
+  version: v1.31.1-0
   name: mailpit
   activation_prefix: mailpit_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-mariadb.git
