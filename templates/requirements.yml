@@ -125,11 +125,11 @@
   name: chiefonboarding
   activation_prefix: chiefonboarding_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-cinny.git
-  version: v4.12.6-0
+  version: v4.12.7-0
   name: cinny
   activation_prefix: cinny_
 - src: git+https://iris.radicle.network/z2kX5GbCKBFjiunvLKThDXLzbYnw1.git
-  version: v6.17.3-0
+  version: v6.18.0-0
   name: civicrm
   activation_prefix: civicrm_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-cleanup.git
@@ -137,7 +137,7 @@
   name: cleanup
   activation_prefix: system_cleanup_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-clickhouse.git
-  version: v26.8.4.11-0
+  version: v26.8.6.5-0
   name: clickhouse
   activation_prefix: clickhouse_
 - src: git+https://iris.radicle.network/zp12kTQqmgqnFpUU6gPyVq19HNMD.git
@@ -160,6 +160,10 @@
   version: v0.18.0-1
   name: convertx
   activation_prefix: convertx_
+- src: git+https://iris.radicle.network/z4GaYR5FxcSuYuCKovEo9Zfm3HPXc.git
+  version: v1.20.23-0
+  name: copyparty
+  activation_prefix: copyparty_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-couchdb.git
   version: v3.5.2-2
   name: couchdb
@@ -285,7 +289,7 @@
   name: filebrowser_quantum
   activation_prefix: filebrowser_quantum_
 - src: git+https://iris.radicle.network/zBuFgpA5FBmUEcLEXHY9ZBVGpqDM.git
-  version: v7.15.1-0
+  version: v7.16.2-0
   name: filegator
   activation_prefix: filegator_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-flaresolverr.git
@@ -317,7 +321,7 @@
   name: freescout
   activation_prefix: freescout_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-freshrss.git
-  version: v1.29.1-1
+  version: v1.30.0-0
   name: freshrss
   activation_prefix: freshrss_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-funkwhale.git
@@ -393,7 +397,7 @@
   name: ilmo
   activation_prefix: ilmo_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-immich.git
-  version: v3.2.1-0
+  version: v3.2.2-0
   name: immich
   activation_prefix: immich_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-immich-kiosk.git
@@ -409,7 +413,7 @@
   name: influxdb
   activation_prefix: influxdb_
 - src: git+https://iris.radicle.network/zA2EcZYaHBzoc3XudvDhVDBjT42a.git
-  version: v4.11.0-1
+  version: v4.12.0-0
   name: inspircd
   activation_prefix: inspircd_
 - src: git+https://github.com/spatterIight/ansible-role-jackett.git
@@ -421,7 +425,7 @@
   name: jellyfin
   activation_prefix: jellyfin_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-jitsi.git
-  version: v11146-2-0
+  version: v11248-0
   name: jitsi
   activation_prefix: jitsi_
 - src: git+https://iris.radicle.network/zttNpUS7xCeDnn2e4No2dUvZv7L7.git
@@ -437,7 +441,7 @@
   name: karakeep
   activation_prefix: karakeep_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-keycloak.git
-  version: v26.7.3-0
+  version: v26.7.4-0
   name: keycloak
   activation_prefix: keycloak_
 - src: git+https://iris.radicle.network/z3m9zZgMmAQX5aVtj5Y9KYRnhjVrt.git
@@ -473,7 +477,7 @@
   name: limesurvey
   activation_prefix: limesurvey_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-linkding.git
-  version: v1.46.2-0
+  version: v1.47.0-0
   name: linkding
   activation_prefix: linkding_
 - src: git+https://iris.radicle.network/zQxCS4UUiKpEWtG4RLzjqgA2gYmz.git
@@ -569,7 +573,7 @@
   name: monerooo
   activation_prefix: monerooo_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-mongodb.git
-  version: v8.3.9-0
+  version: v8.3.11-0
   name: mongodb
   activation_prefix: mongodb_
 - src: git+https://iris.radicle.network/z4Ez9aU119yFMs59cnA3KUnExFAeN.git
@@ -673,7 +677,7 @@
   name: ots
   activation_prefix: ots_
 - src: git+https://iris.radicle.network/zvzJe15VMBkGd2CMBctvpVZgmQG5.git
-  version: v2.24.0-0
+  version: v2.24.1-0
   name: otterwiki
   activation_prefix: otterwiki_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-outline.git
@@ -689,7 +693,7 @@
   name: oxitraffic
   activation_prefix: oxitraffic_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-paperless.git
-  version: v3.1.3-0
+  version: v3.1.3-1
   name: paperless
   activation_prefix: paperless_
 - src: git+https://iris.radicle.network/z2LGSfc7ziSKvErzZAQdTyTQ4sJcs.git
@@ -697,7 +701,7 @@
   name: papra
   activation_prefix: papra_
 - src: git+https://iris.radicle.network/z2cZCZP8Mu4LYMbHKaTdnP1otc46L.git
-  version: v1.13.0-0
+  version: v1.14.0-0
   name: pdfding
   activation_prefix: pdfding_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-peertube.git
@@ -805,7 +809,7 @@
   name: rabbitmq
   activation_prefix: rabbitmq_
 - src: git+https://github.com/spatterIight/ansible-role-radarr.git
-  version: v6.3.0-0
+  version: v6.4.4-0
   name: radarr
   activation_prefix: radarr_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-radicale.git
@@ -845,7 +849,7 @@
   name: redmine
   activation_prefix: redmine_
 - src: git+https://iris.radicle.network/z3rhdtDR5EHHGk1SNBHwYtofxNyAf.git
-  version: v5.3.1-0
+  version: v5.5.0-0
   name: reitti
   activation_prefix: reitti_
 - src: git+https://iris.radicle.network/zi4z5FpzySQ1kRqVpqcTkEfnXrD9.git
@@ -909,7 +913,7 @@
   name: solidinvoice
   activation_prefix: solidinvoice_
 - src: git+https://github.com/spatterIight/ansible-role-sonarr.git
-  version: v4.0.19-0
+  version: v4.0.20-0
   name: sonarr
   activation_prefix: sonarr_
 - src: git+https://iris.radicle.network/z381JyLARWwSiZnYotVXehYcQEw7u.git
@@ -917,7 +921,7 @@
   name: soundcloak
   activation_prefix: soundcloak_
 - src: git+https://iris.radicle.network/z2eyt9uovdZtjh8TL5qiyv2PqAYvP.git
-  version: v0.46.0-0
+  version: v0.46.2-0
   name: sqlpage
   activation_prefix: sqlpage_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-ssh.git
@@ -957,7 +961,7 @@
   name: systemd_service_manager
   activation_prefix: ""
 - src: git+https://github.com/IUCCA/ansible-role-tandoor.git
-  version: v2.6.13-1
+  version: v2.6.15-0
   name: tandoor
   activation_prefix: tandoor_
 - src: git+https://iris.radicle.network/zfFbFSPaygGqPEkWCTUGnzNwWNoT.git
