@@ -23,6 +23,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
+          token: ${{ secrets.SYNC_UPSTREAM_TOKEN }}
 
       - name: Configure git identity
         run: |
