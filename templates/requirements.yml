@@ -33,7 +33,7 @@
   name: apprise
   activation_prefix: apprise_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-appsmith.git
-  version: v2.4-0
+  version: v2.4-1
   name: appsmith
   activation_prefix: appsmith_
 - src: git+https://iris.radicle.network/zcSq6tnVLBUQ88zSRLThc7A7RDZb.git
@@ -137,7 +137,7 @@
   name: cleanup
   activation_prefix: system_cleanup_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-clickhouse.git
-  version: v26.8.8.8-0
+  version: v26.8.9.10-0
   name: clickhouse
   activation_prefix: clickhouse_
 - src: git+https://iris.radicle.network/zp12kTQqmgqnFpUU6gPyVq19HNMD.git
@@ -533,7 +533,7 @@
   name: mediawiki
   activation_prefix: mediawiki_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-meilisearch.git
-  version: v1.53.2-0
+  version: v1.53.2-1
   name: meilisearch
   activation_prefix: meilisearch_
 - src: git+https://iris.radicle.network/z2arPcue4GZ6G6FY3gZexsJXqHyDs.git
@@ -693,7 +693,7 @@
   name: oxitraffic
   activation_prefix: oxitraffic_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-paperless.git
-  version: v3.2.0-1
+  version: v3.2.1-0
   name: paperless
   activation_prefix: paperless_
 - src: git+https://iris.radicle.network/z2LGSfc7ziSKvErzZAQdTyTQ4sJcs.git
@@ -837,7 +837,7 @@
   name: readeck
   activation_prefix: readeck_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-redis.git
-  version: v8.10.1-2
+  version: v8.10.1-3
   name: redis
   activation_prefix: redis_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-redlib.git
