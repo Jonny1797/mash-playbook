@@ -137,7 +137,7 @@
   name: cleanup
   activation_prefix: system_cleanup_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-clickhouse.git
-  version: v26.8.9.10-0
+  version: v26.9.1.1629-0
   name: clickhouse
   activation_prefix: clickhouse_
 - src: git+https://iris.radicle.network/zp12kTQqmgqnFpUU6gPyVq19HNMD.git
@@ -169,7 +169,7 @@
   name: couchdb
   activation_prefix: couchdb_
 - src: git+https://iris.radicle.network/z38Yp2e9yFouswvrnX5MdgZYaViLb.git
-  version: v2026.5.1-3
+  version: v2026.5.1-4
   name: cryptpad
   activation_prefix: cryptpad_
 - src: git+https://iris.radicle.network/z2zgHMDh4Pb8yr4DH8BVkMcdboBXd.git
@@ -245,7 +245,7 @@
   name: etcd
   activation_prefix: etcd_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-etherpad.git
-  version: v3.3.5-1
+  version: v3.3.6-0
   name: etherpad
   activation_prefix: etherpad_
 - src: git+https://iris.radicle.network/z4SSf2SU2YwBaMmCFBJnM5KqorU9T.git
@@ -381,7 +381,7 @@
   name: heyform
   activation_prefix: heyform_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-homarr.git
-  version: v1.77.2-0
+  version: v1.77.2-1
   name: homarr
   activation_prefix: homarr_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-hubsite.git
@@ -681,7 +681,7 @@
   name: otterwiki
   activation_prefix: otterwiki_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-outline.git
-  version: v1.9.2-4
+  version: v1.9.2-5
   name: outline
   activation_prefix: outline_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-owncast.git
@@ -837,7 +837,7 @@
   name: readeck
   activation_prefix: readeck_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-redis.git
-  version: v8.10.1-3
+  version: v8.10.2-0
   name: redis
   activation_prefix: redis_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-redlib.git
