@@ -13,7 +13,7 @@
   name: adminer
   activation_prefix: adminer_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-anki.git
-  version: v26.09.2-1
+  version: v26.09.3-0
   name: anki
   activation_prefix: anki_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-anonymousoverflow.git
@@ -193,7 +193,7 @@
   name: docker_registry
   activation_prefix: docker_registry_enabled
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-docker-registry-browser.git
-  version: v1.10.0-2
+  version: v1.10.1-0
   name: docker_registry_browser
   activation_prefix: docker_registry_browser_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-docker-registry-proxy.git
@@ -241,7 +241,7 @@
   name: ergo
   activation_prefix: ergo_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-etcd.git
-  version: v3.7.1-2
+  version: v3.7.2-0
   name: etcd
   activation_prefix: etcd_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-etherpad.git
@@ -321,7 +321,7 @@
   name: freescout
   activation_prefix: freescout_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-freshrss.git
-  version: v1.30.0-1
+  version: v1.30.0-2
   name: freshrss
   activation_prefix: freshrss_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-funkwhale.git
@@ -361,11 +361,11 @@
   name: grafana
   activation_prefix: grafana_
 - src: git+https://github.com/spatterIight/ansible-role-headplane.git
-  version: v0.7.1-3
+  version: v0.7.1-4
   name: headplane
   activation_prefix: headplane_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-headscale.git
-  version: v0.29.3-5
+  version: v0.29.4-0
   name: headscale
   activation_prefix: headscale_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-healthchecks.git
@@ -401,7 +401,7 @@
   name: immich
   activation_prefix: immich_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-immich-kiosk.git
-  version: v0.43.2-1
+  version: v0.44.0-0
   name: immich_kiosk
   activation_prefix: immich_kiosk_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-infisical.git
@@ -417,7 +417,7 @@
   name: inspircd
   activation_prefix: inspircd_
 - src: git+https://github.com/spatterIight/ansible-role-jackett.git
-  version: v0.24.1870-3
+  version: v0.24.2644-1
   name: jackett
   activation_prefix: jackett_
 - src: git+https://github.com/spatterIight/ansible-role-jellyfin.git
@@ -801,7 +801,7 @@
   name: prunemate
   activation_prefix: prunemate_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-qbittorrent.git
-  version: v5.2.3-1
+  version: v5.2.3-2
   name: qbittorrent
   activation_prefix: qbittorrent_
 - src: git+https://iris.radicle.network/z3PCtuwyz2HdHeKnHCefR253rpYwp.git
@@ -997,7 +997,7 @@
   name: tinyauth
   activation_prefix: tinyauth_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-traefik.git
-  version: v3.7.13-3
+  version: v3.7.13-4
   name: traefik
   activation_prefix: mash_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-traefik-certs-dumper.git

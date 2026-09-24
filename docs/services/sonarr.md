@@ -68,9 +68,9 @@ For additional configuration options, refer to [ansible-role-sonarr](https://git
 
 - "* Arr" applications — [Autobrr](autobrr.md) / [Homarr](homarr.md) / [Radarr](radarr.md)
 - [Jackett](jackett.md)
-  - For Jackett integration instructions, see the [setup guide](jackett.md#intergration-with-sonarrradarr)
+  - For Jackett integration instructions, refer to the [setup guide](https://github.com/spatterIight/ansible-role-jackett/blob/main/docs/configuring-jackett.md#intergration-with-sonarrradarr) on the role's documentation
 - [Jellyfin](jellyfin.md)
 - [Seerr](seerr.md)
 - [Plex](plex.md)
 - [qBittorrent](qbittorrent.md)
-  - For qBittorrent integration instructions, see the [setup guide](qbittorrent.md#intergration-with-sonarrradarr)
+  - For qBittorrent integration instructions, refer to the [setup guide](https://github.com/mother-of-all-self-hosting/ansible-role-qbittorrent/blob/main/docs/configuring-qbittorrent.md#integration-with-sonarrradarr) on the role's documentation
