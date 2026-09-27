@@ -137,7 +137,7 @@
   name: cleanup
   activation_prefix: system_cleanup_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-clickhouse.git
-  version: v26.9.2.8-0
+  version: v26.9.3.38-0
   name: clickhouse
   activation_prefix: clickhouse_
 - src: git+https://iris.radicle.network/zp12kTQqmgqnFpUU6gPyVq19HNMD.git
@@ -317,7 +317,7 @@
   name: forgejo_runner
   activation_prefix: forgejo_runner_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-freescout.git
-  version: v1.8.241-0
+  version: v1.8.242-0
   name: freescout
   activation_prefix: freescout_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-freshrss.git
@@ -417,7 +417,7 @@
   name: inspircd
   activation_prefix: inspircd_
 - src: git+https://github.com/spatterIight/ansible-role-jackett.git
-  version: v0.24.2668-0
+  version: v0.24.2670-0
   name: jackett
   activation_prefix: jackett_
 - src: git+https://github.com/spatterIight/ansible-role-jellyfin.git
@@ -1029,7 +1029,7 @@
   name: vaultwarden
   activation_prefix: vaultwarden_
 - src: git+https://github.com/spatterIight/ansible-role-vector.git
-  version: v0.56.0-4
+  version: v0.58.0-1
   name: vector
   activation_prefix: vector_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-versatiles.git
