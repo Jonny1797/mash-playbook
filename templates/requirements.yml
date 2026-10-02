@@ -137,7 +137,7 @@
   name: cleanup
   activation_prefix: system_cleanup_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-clickhouse.git
-  version: v26.9.6.6-0
+  version: v26.9.8.3-0
   name: clickhouse
   activation_prefix: clickhouse_
 - src: git+https://iris.radicle.network/zp12kTQqmgqnFpUU6gPyVq19HNMD.git
@@ -449,7 +449,7 @@
   name: karakeep
   activation_prefix: karakeep_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-keycloak.git
-  version: v26.7.4-1
+  version: v26.8.0-0
   name: keycloak
   activation_prefix: keycloak_
 - src: git+https://iris.radicle.network/z3m9zZgMmAQX5aVtj5Y9KYRnhjVrt.git
@@ -493,7 +493,7 @@
   name: linkwarden
   activation_prefix: linkwarden_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-listmonk.git
-  version: v6.2.0-4
+  version: v6.2.0-5
   name: listmonk
   activation_prefix: listmonk_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-lldap.git
@@ -557,7 +557,7 @@
   name: mermaid
   activation_prefix: mermaid_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-minecraft.git
-  version: v2026.9.1-1
+  version: v2026.9.1-3
   name: minecraft
   activation_prefix: minecraft_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-miniflux.git
@@ -657,7 +657,7 @@
   name: ntfy
   activation_prefix: ntfy_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-oauth2-proxy.git
-  version: v7.15.4-3
+  version: v7.15.5-0
   name: oauth2_proxy
   activation_prefix: oauth2_proxy_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-omnitools.git
@@ -861,7 +861,7 @@
   name: redlib
   activation_prefix: redlib_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-redmine.git
-  version: v7.0.1-1
+  version: v7.0.2-0
   name: redmine
   activation_prefix: redmine_
 - src: git+https://iris.radicle.network/z3rhdtDR5EHHGk1SNBHwYtofxNyAf.git
