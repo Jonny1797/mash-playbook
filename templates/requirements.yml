@@ -261,7 +261,7 @@
   name: excalidraw_room
   activation_prefix: excalidraw_room_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-exim-relay.git
-  version: v4.99.5-r0-1-0
+  version: v4.99.5-r0-1-1
   name: exim_relay
   activation_prefix: exim_relay_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-fail2ban.git
@@ -425,11 +425,11 @@
   name: inspircd
   activation_prefix: inspircd_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-jackett.git
-  version: v0.24.2685-1
+  version: v0.24.2685-2
   name: jackett
   activation_prefix: jackett_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-jellyfin.git
-  version: v12.1-1
+  version: v12.1-2
   name: jellyfin
   activation_prefix: jellyfin_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-jitsi.git
@@ -477,7 +477,7 @@
   name: librebooking
   activation_prefix: librebooking_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-lidarr.git
-  version: v3.1.0.4875-3
+  version: v3.1.0.4875-4
   name: lidarr
   activation_prefix: lidarr_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-limesurvey.git
@@ -541,7 +541,7 @@
   name: mediawiki
   activation_prefix: mediawiki_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-meilisearch.git
-  version: v1.53.2-1
+  version: v1.53.2-2
   name: meilisearch
   activation_prefix: meilisearch_
 - src: git+https://iris.radicle.network/z2arPcue4GZ6G6FY3gZexsJXqHyDs.git
@@ -581,7 +581,7 @@
   name: monerooo
   activation_prefix: monerooo_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-mongodb.git
-  version: v8.3.11-1
+  version: v9.0.2-1
   name: mongodb
   activation_prefix: mongodb_
 - src: git+https://iris.radicle.network/z4Ez9aU119yFMs59cnA3KUnExFAeN.git
@@ -753,7 +753,7 @@
   name: playbook_state_preserver
   activation_prefix: devture_playbook_state_preserver_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-plex.git
-  version: v1.43.4-4
+  version: v1.43.4-5
   name: plex
   activation_prefix: plex_
 - src: git+https://iris.radicle.network/z2vTmc3fLqxvpuT9EoZvkErWNZM1K.git
@@ -825,7 +825,7 @@
   name: rabbitmq
   activation_prefix: rabbitmq_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-radarr.git
-  version: v6.4.4-3
+  version: v6.4.4-4
   name: radarr
   activation_prefix: radarr_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-radicale.git
