@@ -57,7 +57,7 @@
   name: authentik
   activation_prefix: authentik_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-autobrr.git
-  version: v1.86.0-1
+  version: v1.87.0-0
   name: autobrr
   activation_prefix: autobrr_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-aux.git
@@ -73,7 +73,7 @@
   name: barassistant
   activation_prefix: barassistant_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-bazarr.git
-  version: v1.6.0-5
+  version: v1.6.2-0
   name: bazarr
   activation_prefix: bazarr_
 - src: git+https://iris.radicle.network/z2bgVhWju6shYSwtdKb7v3eoSL1Pt.git
@@ -137,7 +137,7 @@
   name: cleanup
   activation_prefix: system_cleanup_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-clickhouse.git
-  version: v26.9.8.3-0
+  version: v26.9.9.28-0
   name: clickhouse
   activation_prefix: clickhouse_
 - src: git+https://iris.radicle.network/zp12kTQqmgqnFpUU6gPyVq19HNMD.git
@@ -157,7 +157,7 @@
   name: converse
   activation_prefix: converse_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-convertx.git
-  version: v0.18.0-4
+  version: v0.19.0-0
   name: convertx
   activation_prefix: convertx_
 - src: git+https://iris.radicle.network/z4GaYR5FxcSuYuCKovEo9Zfm3HPXc.git
@@ -293,7 +293,7 @@
   name: filegator
   activation_prefix: filegator_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-flaresolverr.git
-  version: v3.5.0-4
+  version: v3.5.2-0
   name: flaresolverr
   activation_prefix: flaresolverr_
 - src: git+https://iris.radicle.network/z49LkutSMcaLA2DBazn1h4V6Pn6GK.git
@@ -317,7 +317,7 @@
   name: forgejo_runner
   activation_prefix: forgejo_runner_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-freescout.git
-  version: v1.8.243-0
+  version: v1.8.245-0
   name: freescout
   activation_prefix: freescout_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-freshrss.git
@@ -333,7 +333,7 @@
   name: ghostfolio
   activation_prefix: ghostfolio_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-gitea.git
-  version: v1.27.3-1
+  version: v28.0.0-0
   name: gitea
   activation_prefix: gitea_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-gitlab.git
@@ -405,7 +405,7 @@
   name: ilmo
   activation_prefix: ilmo_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-immich.git
-  version: v3.2.2-1
+  version: v3.2.4-0
   name: immich
   activation_prefix: immich_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-immich-kiosk.git
@@ -521,11 +521,11 @@
   name: mailpit
   activation_prefix: mailpit_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-mariadb.git
-  version: v12.3.3-1
+  version: v12.3.3-2
   name: mariadb
   activation_prefix: mariadb_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-matomo.git
-  version: v5.13.0-3
+  version: v5.14.0-0
   name: matomo
   activation_prefix: matomo_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-matterbridge.git
@@ -541,7 +541,7 @@
   name: mediawiki
   activation_prefix: mediawiki_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-meilisearch.git
-  version: v1.53.2-2
+  version: v1.54.3-0
   name: meilisearch
   activation_prefix: meilisearch_
 - src: git+https://iris.radicle.network/z2arPcue4GZ6G6FY3gZexsJXqHyDs.git
@@ -557,7 +557,7 @@
   name: mermaid
   activation_prefix: mermaid_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-minecraft.git
-  version: v2026.9.1-3
+  version: v2026.9.2-0
   name: minecraft
   activation_prefix: minecraft_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-miniflux.git
@@ -605,7 +605,7 @@
   name: mumble
   activation_prefix: mumble_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-n8n.git
-  version: v2.39.4-2
+  version: v2.42.2-0
   name: n8n
   activation_prefix: n8n_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-navidrome.git
@@ -613,7 +613,7 @@
   name: navidrome
   activation_prefix: navidrome_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-neko.git
-  version: v3.1.5-2
+  version: v3.1.6-0
   name: neko
   activation_prefix: neko_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-netbox.git
@@ -769,11 +769,11 @@
   name: poodledonts
   activation_prefix: poodledonts_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-postgis.git
-  version: v18-3.6-5
+  version: v18-3.6-6
   name: postgis
   activation_prefix: postgis_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-postgres.git
-  version: v18.6-2
+  version: v18.6-4
   name: postgres
   activation_prefix: postgres_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-postgres-backup.git
@@ -1049,7 +1049,7 @@
   name: vector
   activation_prefix: vector_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-versatiles.git
-  version: v4.13.0-1
+  version: v4.15.0-0
   name: versatiles
   activation_prefix: versatiles_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-vikunja.git
@@ -1085,7 +1085,7 @@
   name: woodpecker_ci_server
   activation_prefix: woodpecker_ci_server_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-wordpress
-  version: v7.1.0-3
+  version: v7.1.2-0
   name: wordpress
   activation_prefix: wordpress_
 - src: git+https://iris.radicle.network/z2i8BkHXzRvK1ZtGwHuvLACRswXgA.git
