@@ -65,7 +65,7 @@
   name: auxiliary
   activation_prefix: aux_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-backup_borg.git
-  version: v1.4.5-2.1.9-1
+  version: v1.4.5-2.1.10-0
   name: backup_borg
   activation_prefix: backup_borg_
 - src: git+https://iris.radicle.network/z3JDUHjeHMqbZ3YLxquSUbCmAJLi.git
@@ -137,7 +137,7 @@
   name: cleanup
   activation_prefix: system_cleanup_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-clickhouse.git
-  version: v26.9.10.4-0
+  version: v26.9.11.2-0
   name: clickhouse
   activation_prefix: clickhouse_
 - src: git+https://iris.radicle.network/zp12kTQqmgqnFpUU6gPyVq19HNMD.git
@@ -245,7 +245,7 @@
   name: etcd
   activation_prefix: etcd_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-etherpad.git
-  version: v3.3.6-0
+  version: v3.3.7-0
   name: etherpad
   activation_prefix: etherpad_
 - src: git+https://iris.radicle.network/z4SSf2SU2YwBaMmCFBJnM5KqorU9T.git
@@ -321,7 +321,7 @@
   name: freescout
   activation_prefix: freescout_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-freshrss.git
-  version: v1.30.0-2
+  version: v1.30.1-0
   name: freshrss
   activation_prefix: freshrss_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-funkwhale.git
@@ -921,7 +921,7 @@
   name: snowflake
   activation_prefix: snowflake_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-soft_serve.git
-  version: v0.12.2-3
+  version: v0.12.3-0
   name: soft_serve
   activation_prefix: soft_serve_
 - src: git+https://iris.radicle.network/zeEwXM9Fp4C8NU4oQfNg474Vivwu.git
