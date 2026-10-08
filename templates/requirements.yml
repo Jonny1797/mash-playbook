@@ -97,7 +97,7 @@
   name: bookstack
   activation_prefix: bookstack_
 - src: git+https://iris.radicle.network/zxNS7XeayGimb4WFfvqmasiZZC3v.git
-  version: v2.2.6-0
+  version: v2.3.10-0
   name: borg_ui
   activation_prefix: borg_ui_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-browserless.git
@@ -253,7 +253,7 @@
   name: eurooffice
   activation_prefix: eurooffice_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-excalidraw.git
-  version: v2025.12.5-9
+  version: v2025.12.5-10
   name: excalidraw
   activation_prefix: excalidraw_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-excalidraw-room.git
@@ -377,7 +377,7 @@
   name: headscale
   activation_prefix: headscale_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-healthchecks.git
-  version: v4.4-1
+  version: v4.4-2
   name: healthchecks
   activation_prefix: healthchecks_
 - src: git+https://iris.radicle.network/z8D2GRZrm8JXZeHHe9j1HMvvj8An.git
@@ -405,7 +405,7 @@
   name: ilmo
   activation_prefix: ilmo_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-immich.git
-  version: v3.2.4-0
+  version: v3.3.0-1
   name: immich
   activation_prefix: immich_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-immich-kiosk.git
@@ -617,7 +617,7 @@
   name: neko
   activation_prefix: neko_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-netbox.git
-  version: v4.7.0-5.1.1-1
+  version: v4.7.0-5.1.1-2
   name: netbox
   activation_prefix: netbox_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-nextcloud.git
@@ -653,7 +653,7 @@
   name: notfellchen
   activation_prefix: notfellchen_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-ntfy.git
-  version: v2.28.0-1
+  version: v2.29.0-0
   name: ntfy
   activation_prefix: ntfy_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-oauth2-proxy.git
@@ -737,7 +737,7 @@
   name: pinepods
   activation_prefix: pinepods_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-plausible.git
-  version: v3.2.1-5
+  version: v3.2.1-6
   name: plausible
   activation_prefix: plausible_
 - src: git+https://github.com/devture/com.devture.ansible.role.playbook_help.git
@@ -1013,7 +1013,7 @@
   name: tinyauth
   activation_prefix: tinyauth_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-traefik.git
-  version: v3.7.13-4
+  version: v3.7.14-0
   name: traefik
   activation_prefix: mash_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-traefik-certs-dumper.git
@@ -1077,11 +1077,11 @@
   name: wikimore
   activation_prefix: wikimore_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-woodpecker-ci-agent.git
-  version: v3.18.1-1
+  version: v3.19.0-0
   name: woodpecker_ci_agent
   activation_prefix: woodpecker_ci_agent_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-woodpecker-ci-server.git
-  version: v3.18.1-1
+  version: v3.19.0-0
   name: woodpecker_ci_server
   activation_prefix: woodpecker_ci_server_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-wordpress
