@@ -133,11 +133,11 @@
   name: civicrm
   activation_prefix: civicrm_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-cleanup.git
-  version: v1.0.0-2
+  version: v2.0.0-1
   name: cleanup
   activation_prefix: system_cleanup_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-clickhouse.git
-  version: v26.9.14.10-0
+  version: v26.9.15.5-0
   name: clickhouse
   activation_prefix: clickhouse_
 - src: git+https://iris.radicle.network/zp12kTQqmgqnFpUU6gPyVq19HNMD.git
@@ -317,7 +317,7 @@
   name: forgejo_runner
   activation_prefix: forgejo_runner_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-freescout.git
-  version: v1.8.245-0
+  version: v1.8.247-0
   name: freescout
   activation_prefix: freescout_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-freshrss.git
@@ -365,7 +365,7 @@
   name: gotosocial
   activation_prefix: gotosocial_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-grafana.git
-  version: v13.0.2-3
+  version: v13.0.2-5
   name: grafana
   activation_prefix: grafana_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-headplane.git
@@ -709,7 +709,7 @@
   name: oxitraffic
   activation_prefix: oxitraffic_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-paperless.git
-  version: v3.3.0-0
+  version: v3.3.0-2
   name: paperless
   activation_prefix: paperless_
 - src: git+https://iris.radicle.network/z2LGSfc7ziSKvErzZAQdTyTQ4sJcs.git

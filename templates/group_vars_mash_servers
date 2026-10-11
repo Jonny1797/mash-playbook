@@ -76,6 +76,26 @@ system_swap_enabled: false
 
 
 
+# role-specific:cleanup
+########################################################################
+#                                                                      #
+# cleanup                                                              #
+#                                                                      #
+########################################################################
+
+system_cleanup_identifier: "{{ mash_playbook_service_identifier_prefix }}system-cleanup"
+
+system_cleanup_base_path: "{{ mash_playbook_base_path }}/{{ mash_playbook_service_base_directory_name_prefix }}system-cleanup"
+
+########################################################################
+#                                                                      #
+# /cleanup                                                             #
+#                                                                      #
+########################################################################
+# /role-specific:cleanup
+
+
+
 # role-specific:systemd_service_manager
 ########################################################################
 #                                                                      #
@@ -7359,7 +7379,7 @@ grafana_gid: "{{ mash_playbook_gid }}"
 
 grafana_systemd_wanted_services_list_auto: |
   {{
-    ([exim_relay_identifier ~ '.service'] if exim_relay_enabled | default(false) and grafana_mailer_smtp_enabled | default(false) and grafana_smtp_host == exim_relay_identifier else [])
+    ([exim_relay_identifier ~ '.service'] if exim_relay_enabled | default(false) and grafana_mailer_enabled | default(false) and grafana_config_smtp_host == exim_relay_identifier else [])
     +
     ([loki_identifier ~ '.service'] if loki_enabled | default(false) else [])
     +
@@ -7372,7 +7392,7 @@ grafana_systemd_wanted_services_list_auto: |
 
 grafana_container_additional_networks_auto: |
   {{
-    ([exim_relay_container_network] if exim_relay_enabled | default(false) and grafana_mailer_smtp_enabled | default(false) and grafana_smtp_host == exim_relay_identifier and grafana_container_network != exim_relay_container_network else [])
+    ([exim_relay_container_network] if exim_relay_enabled | default(false) and grafana_mailer_enabled | default(false) and grafana_config_smtp_host == exim_relay_identifier and grafana_container_network != exim_relay_container_network else [])
     +
     ([loki_container_network] if loki_enabled | default(false) and grafana_container_network != loki_container_network else [])
     +
@@ -7389,10 +7409,10 @@ grafana_container_labels_traefik_enabled: "{{ mash_playbook_traefik_labels_enabl
 grafana_container_labels_traefik_docker_network: "{{ mash_playbook_reverse_proxyable_services_additional_network }}"
 
 # role-specific:exim_relay
-grafana_mailer_smtp_enabled: "{{ exim_relay_enabled | default(false) }}"
-grafana_smtp_host: "{{ exim_relay_identifier if exim_relay_enabled else '' }}"
-grafana_smtp_port: 8025
-grafana_smtp_from_address: "{{ exim_relay_sender_address if exim_relay_enabled else '' }}"
+grafana_mailer_enabled: "{{ exim_relay_enabled | default(false) }}"
+grafana_config_smtp_host: "{{ exim_relay_identifier if exim_relay_enabled else '' }}"
+grafana_config_smtp_port: 8025
+grafana_config_smtp_from_address: "{{ exim_relay_sender_address if exim_relay_enabled else '' }}"
 # /role-specific:exim_relay
 
 # role-specific:traefik
@@ -13361,18 +13381,18 @@ paperless_systemd_required_services_list_auto: |
 
 paperless_systemd_wanted_services_list_auto: |
   {{
-    ([gotenberg_identifier ~ '.service'] if gotenberg_enabled | default(false) else [])
+    ([gotenberg_identifier ~ '.service'] if gotenberg_enabled | default(false) and paperless_environment_variables_paperless_tika_enabled | default(false) else [])
     +
-    ([exim_relay_identifier ~ '.service'] if exim_relay_enabled | default(false) and paperless_email_host == exim_relay_identifier else [])
+    ([exim_relay_identifier ~ '.service'] if exim_relay_enabled | default(false) and paperless_environment_variables_paperless_email_host == exim_relay_identifier else [])
     +
-    ([tika_identifier ~ '.service'] if tika_enabled | default(false) else [])
+    ([tika_identifier ~ '.service'] if tika_enabled | default(false) and paperless_environment_variables_paperless_tika_enabled | default(false) else [])
   }}
 
 paperless_container_additional_networks_auto: |
   {{
-    ([exim_relay_container_network] if exim_relay_enabled | default(false) and paperless_email_host == exim_relay_identifier and paperless_container_network != exim_relay_container_network else [])
+    ([exim_relay_container_network] if exim_relay_enabled | default(false) and paperless_environment_variables_paperless_email_host == exim_relay_identifier and paperless_container_network != exim_relay_container_network else [])
     +
-    ([gotenberg_container_network] if gotenberg_enabled | default(false) and paperless_container_network != gotenberg_container_network else [])
+    ([gotenberg_container_network] if gotenberg_enabled | default(false) and paperless_container_network != gotenberg_container_network and paperless_environment_variables_paperless_tika_enabled | default(false) else [])
     +
     ([mariadb_container_network] if mariadb_enabled | default(false) and paperless_database_mariadb_hostname == mariadb_connection_hostname and paperless_container_network != mariadb_container_network and paperless_database_type == 'mariadb' else [])
     +
@@ -13380,7 +13400,7 @@ paperless_container_additional_networks_auto: |
     +
     ([postgres_container_network] if postgres_enabled | default(false) and (paperless_database_postgres_hostname == postgres_connection_hostname and paperless_container_network != postgres_container_network and not paperless_database_postgres_socket_enabled) and paperless_database_type == 'postgres' else [])
     +
-    ([tika_container_network] if tika_enabled | default(false) and paperless_container_network != tika_container_network else [])
+    ([tika_container_network] if tika_enabled | default(false) and paperless_container_network != tika_container_network and paperless_environment_variables_paperless_tika_enabled | default(false) else [])
   }}
 
 paperless_container_labels_traefik_enabled: "{{ mash_playbook_traefik_labels_enabled }}"
@@ -13388,23 +13408,16 @@ paperless_container_labels_traefik_docker_network: "{{ mash_playbook_reverse_pro
 
 paperless_database_type: "{{ 'postgres' if postgres_enabled | default(false) else 'sqlite' }}"
 
-paperless_gotenberg_enabled: "{{ paperless_tika_enabled | default(false) }}" # Apache Tika Server requires Gotenberg
-
-# Wire Paperless-ngx to the Apache Tika Server and Gotenberg services of this playbook.
-# The paperless role no longer bundles its own instances of them.
-paperless_tika_endpoint: "{{ ('http://' + tika_identifier + ':' + (tika_container_http_port | string)) if tika_enabled | default(false) else '' }}"
-paperless_tika_gotenberg_endpoint: "{{ ('http://' + gotenberg_identifier + ':' + (gotenberg_container_http_port | string)) if gotenberg_enabled | default(false) else '' }}"
-
-paperless_secret_key: "{{ (mash_playbook_generic_secret_key + ':paperless.secret') | hash('sha512') | to_uuid }}"
+paperless_environment_variables_paperless_secret_key: "{{ (mash_playbook_generic_secret_key + ':paperless.secret') | hash('sha512') | to_uuid }}"
 
 # role-specific:exim_relay
-paperless_email_host: "{{ exim_relay_identifier if exim_relay_enabled else '' }}"
-paperless_email_port: "{{ 8025 if exim_relay_enabled else '' }}"
-paperless_email_from: "{{ exim_relay_sender_address if exim_relay_enabled else '' }}"
+paperless_environment_variables_paperless_email_host: "{{ exim_relay_identifier if exim_relay_enabled else '' }}"
+paperless_environment_variables_paperless_email_port: "{{ 8025 if exim_relay_enabled else '' }}"
+paperless_environment_variables_paperless_email_from: "{{ exim_relay_sender_address if exim_relay_enabled else '' }}"
 # /role-specific:exim_relay
 
 # role-specific:gotenberg
-paperless_tika_gotenberg_endpoint: "http://{{ gotenberg_identifier }}:{{ gotenberg_container_http_port }}"
+paperless_environment_variables_paperless_tika_gotenberg_endpoint: "{{ ('http://' + gotenberg_identifier + ':' + (gotenberg_container_http_port | string)) if gotenberg_enabled else '' }}"
 # /role-specific:gotenberg
 
 # role-specific:mariadb
@@ -13423,8 +13436,8 @@ paperless_database_postgres_socket_path_host: "{{ postgres_run_path }}"
 # /role-specific:postgres
 
 # role-specific:tika
-paperless_tika_enabled: "{{ tika_enabled }}"
-paperless_tika_endpoint: "http://{{ tika_identifier }}:{{ tika_container_http_port }}"
+paperless_environment_variables_paperless_tika_enabled: "{{ tika_enabled }}"
+paperless_environment_variables_paperless_tika_endpoint: "{{ ('http://' + tika_identifier + ':' + (tika_container_http_port | string)) if tika_enabled else '' }}"
 # /role-specific:tika
 
 # role-specific:traefik
