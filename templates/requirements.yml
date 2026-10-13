@@ -81,7 +81,7 @@
   name: bentopdf
   activation_prefix: bentopdf_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-beszel-hub.git
-  version: v0.21.0-1
+  version: v0.21.0-3
   name: beszel_hub
   activation_prefix: beszel_hub_
 - src: git+https://iris.radicle.network/z2nQcYvPh51zfvVu8hkftDYPmELYP.git
@@ -121,7 +121,7 @@
   name: cap
   activation_prefix: cap_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-changedetection.git
-  version: v0.60.8-0
+  version: v0.60.9-0
   name: changedetection
   activation_prefix: changedetection_
 - src: git+https://iris.radicle.network/z3HYheWh86U9ErEL18tK2gBkq7g2A.git
@@ -141,7 +141,7 @@
   name: cleanup
   activation_prefix: system_cleanup_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-clickhouse.git
-  version: v26.9.16.11-0
+  version: v26.9.17.8-0
   name: clickhouse
   activation_prefix: clickhouse_
 - src: git+https://iris.radicle.network/zp12kTQqmgqnFpUU6gPyVq19HNMD.git
@@ -313,7 +313,7 @@
   name: focalboard
   activation_prefix: focalboard_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-forgejo.git
-  version: v16.0.5-1
+  version: v16.0.6-0
   name: forgejo
   activation_prefix: forgejo_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-forgejo-runner.git
@@ -437,7 +437,7 @@
   name: jellyfin
   activation_prefix: jellyfin_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-jitsi.git
-  version: v11248-2
+  version: v11248-5
   name: jitsi
   activation_prefix: jitsi_
 - src: git+https://iris.radicle.network/zttNpUS7xCeDnn2e4No2dUvZv7L7.git
@@ -657,7 +657,7 @@
   name: notfellchen
   activation_prefix: notfellchen_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-ntfy.git
-  version: v2.29.0-0
+  version: v2.30.0-0
   name: ntfy
   activation_prefix: ntfy_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-oauth2-proxy.git
@@ -1029,7 +1029,7 @@
   name: transfersh
   activation_prefix: transfersh_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-tsdproxy.git
-  version: v2.3.4-0
+  version: v2.3.4-1
   name: tsdproxy
   activation_prefix: tsdproxy_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-typesense.git
@@ -1085,7 +1085,7 @@
   name: woodpecker_ci_agent
   activation_prefix: woodpecker_ci_agent_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-woodpecker-ci-server.git
-  version: v3.19.0-0
+  version: v3.19.0-1
   name: woodpecker_ci_server
   activation_prefix: woodpecker_ci_server_
 - src: git+https://github.com/mother-of-all-self-hosting/ansible-role-wordpress
